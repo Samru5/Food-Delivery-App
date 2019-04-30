@@ -1,0 +1,105 @@
+
+
+<div class="card ">
+        <div class="card-body ">
+          <p class="card-text text-center" style="font-size: 20pt">Breakfast</p>
+          <table class="table table-bordered">
+                <tbody>
+                    
+                        <a  href="#" data-toggle="modal" data-target="#dosa">Dosa</a>
+
+                        
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="dosa">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                  
+                              <!-- Modal Header -->
+                              <div class="modal-header">
+                                <h4 class="modal-title">Breakfast</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              </div>
+                  
+                              <!-- Modal body -->
+                              <div class="modal-body">
+                                <div class="container">
+                  
+                                  <form>
+                                    <div class="form-group">
+                                        <table>
+                                     <span>
+                                      <label >Dish Name</label>
+                                      &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                                      <label >Price</label>
+                                    </span>
+                                      <!-- <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"> -->
+                                    
+                                      <tr *ngFor="let dishname of dishes">
+                                          
+
+                                      <span>{{dishname.dish1}} </span>
+                                      <span>{{dishname.price1}}</span>
+                                      
+                                      </tr>
+
+                                       
+                                   
+                                </table>
+                         
+                            </div>            
+                                   
+                  
+                                  </form>
+                                </div>
+                              </div>
+
+
+                              <!--Counter-->
+                              <div class="input-group">
+                                    <span class="input-group-btn">
+                                                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                    <span class="glyphicon glyphicon-minus"></span>
+                                    </button>
+                                    </span>
+                                    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                                    <span class="input-group-btn">
+                                                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                                    <span class="glyphicon glyphicon-plus"></span>
+                                    </button>
+                                    </span>
+                                  </div>
+                  
+                              <!-- Modal footer -->
+                              <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary">Proceed to Cart</button>
+                               
+                              </div>
+                  
+                            </div>
+                          </div>
+                        </div>
+
+                    <!-- <tr>
+                        
+                        <td>
+                                <span *ngFor="let dishname of dishes">
+                               <a routerLink=""> <h5>{{dishname.dish}}</h5></a>
+                                <br>
+                                <br>
+
+                            </span>
+                        </td>
+                    </tr>
+                   -->
+                </tbody>
+            </table>
+
+
+        </div>
+      </div>
+
+
+    
+      
+      

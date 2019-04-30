@@ -1,0 +1,59 @@
+<div class="container">
+  <h2>Order Food</h2>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Breakfast</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+
+        <div class="panel-body">
+
+          <div class="container">
+
+            <div class="card-deck">
+              <div class="card ">
+
+                <div class="card-body text-center">
+                  <table>
+                    <tr *ngFor="let restaurant of restaurants">
+                      <p class="card-text" style="font-size: 15pt;color: crimson;text-align: left">
+                        <a routerLink="dish">{{restaurant.name}}</a>
+                      </p>
+                      <h6 style="text-align: left">{{restaurant.address}}</h6>
+
+                    </tr>
+
+                </table>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Lunch</a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">Paneer Tikka</div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Dinner</a>
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">Noodles</div>
+        </div>
+      </div>
+    </div>
+  </div>
