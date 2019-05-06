@@ -1,17 +1,17 @@
-<div class="card ">
+<!-- <div class="card ">
     <div class="card-body ">
-      <p class="card-text text-center" style="font-size: 20pt">Breakfast</p>
-      <!--<table class="table table-bordered">
+      <p class="card-text text-center" style="font-size: 20pt">Breakfast</p> 
+      <table class="table table-bordered">
         <tbody>
-  
+   -->
 
 
-           <a routerLink="dishId" data-toggle="modal" data-target="#dosa">Dosa</a>
+           <!-- <a routerLink="dishId" data-toggle="modal" data-target="#dosa">Dosa</a> -->
   
   
-  
+  <!--Today-->
          
-          <div class="modal fade" id="dosa">
+          <div class="modal fade" id="proceed">
             <div class="modal-dialog">
               <div class="modal-content">
   
@@ -21,8 +21,6 @@
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div> 
   
-               
-
   
                  <div class="container">
                   <h2></h2>
@@ -39,39 +37,29 @@
                         <td>{{dishes[0].dishName}}</td>
                         <td>{{dishes[0].dishPrice}}</td>
                         <td>
-  
-                            <input class="input-group-field" type="number" name="quantity" value="0">
-                          
+                            <input class="input-group-field" type="number" name="quantity" value="1">
                         </td>
                       </tr>
-                 
-  
                     </tbody>
                   </table>
                 </div>
-  
-
-               
-  
                  <div class="modal-footer">
-                  <a routerLink="cart">
-                  <button type="submit" class="btn btn-primary" id="proceed">Proceed to Cart</button>
+                  <a routerLink="/checkout" class="btn btn-primary" data-dismiss="modal" id="proceed">Proceed
                 </a>
                 </div>
-  
               </div>
             </div>
-          </div>
+          </div>  
   
          
 
-        </tbody>
-      </table>  -->
-  
+        <!-- </tbody>
+      </table>   
+   -->
 
 
      
-   <div class="card-deck">
+   <!-- <div class="card-deck">
       <div class="card col-sm-3">
       
           <img src="/assets/images/dosa2.jpg" class="card-img-top" width=200 />
@@ -80,8 +68,8 @@
             
       
                      
-                      <h4 class="modal-title">Breakfast</h4>
-                      <button type="button">&times;</button>
+                      <h4 class="">Breakfast</h4>
+                      
       
                    
     
@@ -92,7 +80,7 @@
                                 <input class="input-group-field" type="number" name="quantity" value="0">
 
                     </div>
-                      <button type="submit" class="btn btn-primary" [routerLink]="['#proceed']" id="proceed">Proceed to Cart</button>
+                    <a routerLink="cart" data-toggle="modal" data-target="#proceed">Proceed to Cart</a>
                   </div>
                 </div>
               </div>
@@ -137,11 +125,46 @@
                         </table>
                       </div>
     </div>
-    </div>
-  
-  
-  
- 
-     
+    </div> -->
    
+
+
+ <h2 style="text-align:center;">Breakfast</h2>
+ <div class="cardlayout" style="margin-top:20px;">
+ <div class="card-deck">
+     <div class="card">
+       <img class="card-img-top" src="/assets/images/dosa2.jpg" alt="Card image cap">
+       <div class="card-body">
+         <h5 class="card-title">{{dishes[0].dishName}}</h5>
+         <p class="card-text">Price : {{dishes[0].dishPrice | currency:"INR"}}</p>
+         <a routerLink="cartdetails" data-toggle="modal" class="btn btn-primary"  data-target="#proceed">Order Now</a>
+       </div>
+     </div>
+     <div class="card">
+       <img class="card-img-top" src="/assets/images/sandwich2.jpg" alt="Card image cap" height="175">
+       <div class="card-body">
+           <h5 class="card-title">{{dishes[1].dishName}}</h5>
+           <p class="card-text">Price : {{dishes[1].dishPrice | currency:"INR"}}</p>
+           <a href="#" class="btn btn-primary">Order Now</a>
+       </div>
+     </div>
+     <div class="card">
+       <img class="card-img-top" src="/assets/images/vadapav2.jpg" alt="Card image cap" height="175">
+       <div class="card-body">
+           <h5 class="card-title">{{dishes[2].dishName}}</h5>
+           <p class="card-text">Price : {{dishes[2].dishPrice | currency:"INR"}}</p>
+           <a href="#" class="btn btn-primary">Order Now</a>
+       </div>
+     </div>
+     <div class="card">
+         <img class="card-img-top" src="/assets/images/misalpav.jpeg" alt="Card image cap"  height="175">
+         <div class="card-body">
+             <h5 class="card-title">{{dishes[3].dishName}}</h5>
+             <p class="card-text">Price : {{dishes[3].dishPrice | currency:"INR"}}</p>
+             <a href="#" class="btn btn-primary">Order Now</a>
+         </div>
+       </div>
+   </div>
+ </div>
+
 

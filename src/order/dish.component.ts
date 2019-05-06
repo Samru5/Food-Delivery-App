@@ -14,8 +14,6 @@ export class DishComponent implements OnInit{
         private route: ActivatedRoute) { }
 
       
- 
-
 
 
         ngOnInit(): void {

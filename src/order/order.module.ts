@@ -6,11 +6,17 @@ import { orderRoutes } from './order.route';
 import { DishService } from './dish.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CartComponent } from './cart.component';
+import { CheckoutComponent } from './checkout.component';
+import { DishComponent } from './dish.component';
+import { PaymentComponent } from './payment.component';
 
 @NgModule({
     declarations: [
       OrderComponent,
-      CartComponent
+      CartComponent,
+      CheckoutComponent,
+      DishComponent,
+      PaymentComponent
     ],
     imports: [
       BrowserModule,
