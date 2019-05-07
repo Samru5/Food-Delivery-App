@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-templateUrl:"./order.component.html"
+templateUrl:"./order.component.html",
+styleUrls:["./order.component.css"]
 })
 export class OrderComponent{
     restaurants= 
@@ -10,15 +11,17 @@ export class OrderComponent{
             "id": 101,
             "name": "Suruchi Hotel",
             "address":"Mumbai",
-            
-            "dishes": [
-
-    
-           {"dish":"Dosa"},
-           {"dish":"Sandwitches"},
-           {"dish":"Juice"}
-      ],
+   
             "rating": 3.2,
+         
+        },
+
+
+        {
+            "id": 102,
+            "name": "Welcome Hotel",
+            "address":"Thane",
+            "rating": 4.2,
          
         }
     ];

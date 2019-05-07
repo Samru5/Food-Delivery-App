@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.route';
 import { OrderModule } from 'src/order/order.module';
 import { WelcomeComponent } from './welcome.component';
+import { CustomerModule } from 'src/customer/customer.module';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { WelcomeComponent } from './welcome.component';
   imports: [
     BrowserModule,
     OrderModule,
+    CustomerModule,
     RouterModule.forRoot(appRoutes)
 
   ],

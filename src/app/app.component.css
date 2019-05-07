@@ -33,4 +33,14 @@
  
   }  
 
-  
+  .col-sm-6{
+    float: left;
+  width: 33.33%;
+  padding: 5px;
+  }
+
+  .form-group::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

@@ -76,7 +76,7 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                  <h4 class="modal-title">Sign Up or Login</h4>
+                  <h4 class="modal-title">Sign Up</h4>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -86,18 +86,18 @@
 
                     <form>
                       <div class="form-group">
-
                         <!-- <a href="#" title=""><img src="/assets/images/dinner.jpg" class="img-responsive"></a> -->
                         <div class="row">
                           <div class="col-sm-6">
-                            <a href="#" title=""><img src="/assets/images/github logo.png" height="60px" width="60px"
-                                class="img-responsive"></a>
+                            <a href="https://github.com/login" title=""><img src="/assets/images/github logo.png" height="60px" width="60px"
+                                class="img-responsive" style="margin-left: 150px;"></a>
                           </div>
-                          <div class="col-sm-6">
-                            <a href="#" title=""><img src="/assets/images/linkedin logo.png" height="60px" width="60px"
-                                class="img-responsive"></a>
-                          </div>
+                        
 
+                          <div class="col-sm-6">
+                            <a href="https://www.linkedin.com/uas/login?trk=guest_homepage-basic_nav-header-signin" title=""><img src="/assets/images/linkedin logo.png" height="60px" width="60px"
+                                class="img-responsive" style="margin-bottom: 10px"></a>
+                          </div>
                         </div>
                         <hr>
                         <p style="text-align: center;font-size: 14pt">Or</p>
@@ -153,6 +153,19 @@
     </div>
   </nav>
 
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+      aria-expanded="false">
+      Profile
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" routerLink="profile">Profile</a>
+      <a class="dropdown-item" href="#">Settings</a>
+      <a class="dropdown-item" routerLink="home">Log out</a>
+  
+    </div>
+  </div>
+  
   <!--  
 
   <div id="carousel" class="carousel slide" data-ride="carousel">
