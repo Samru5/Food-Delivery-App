@@ -139,7 +139,7 @@
 
                 <!-- Modal footer -->
                 <div class="modal-footer">
-                  <button type="submit" class="btn btn-primary">Sign Up</button>
+                  <a routerLink="home" class="btn btn-primary">Sign Up</a>
                   <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
 
@@ -160,7 +160,9 @@
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" routerLink="profile">Profile</a>
-      <a class="dropdown-item" href="#">Settings</a>
+      <a class="dropdown-item" routerLink="setting">Settings</a>
+      <a class="dropdown-item" routerLink="track">Track Order</a>
+
       <a class="dropdown-item" routerLink="home">Log out</a>
   
     </div>
@@ -270,11 +272,11 @@
               <span>For Delivery Boy</span>
               <br>
               <span>
-                <a href="#">Add Delivery Boy</a>
+                <a routerLink="/signup">Add Delivery Boy</a>
               </span>
               <br>
               <span>
-                <a href="#">Login</a>
+                <a routerLink="/login">Login</a>
               </span>
             </div>
 

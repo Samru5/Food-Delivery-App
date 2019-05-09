@@ -5,7 +5,8 @@ import { Dish } from './dish';
 
 @Injectable()
 export class DishService {
-    baseUrl = "api/dishes/dish.json";
+    // baseUrl = "api/dishes/dish.json";
+    baseUrl="http://localhost:8080"
 
     constructor(private http: HttpClient) { }
     

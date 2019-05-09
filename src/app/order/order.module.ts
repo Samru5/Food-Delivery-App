@@ -9,6 +9,7 @@ import { CartComponent } from './cart.component';
 import { CheckoutComponent } from './checkout.component';
 import { DishComponent } from './dish.component';
 import { PaymentComponent } from './payment.component';
+import { RestaurantService } from './restaurant.service';
 
 @NgModule({
     declarations: [
@@ -17,13 +18,14 @@ import { PaymentComponent } from './payment.component';
       CheckoutComponent,
       DishComponent,
       PaymentComponent
+      
     ],
     imports: [
       BrowserModule,
       RouterModule.forChild(orderRoutes),
       HttpClientModule
     ],
-    providers: [DishService],
+    providers: [DishService,RestaurantService],
     exports:[RouterModule]
 })
 export class OrderModule{

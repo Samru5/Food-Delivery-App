@@ -13,7 +13,9 @@ export const orderRoutes:Routes=[
     {path:"order/dish/cartdetails",component:DishComponent},
     {path:"checkout",component:CheckoutComponent},
     {path:"payment",component:PaymentComponent},
-    {path:"address",component:CheckoutComponent}
+    {path:"address",component:CheckoutComponent},
+    //{path:"restaurants",component:OrderComponent}
+
 
 
 

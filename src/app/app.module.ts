@@ -4,9 +4,10 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.route';
-import { OrderModule } from 'src/order/order.module';
 import { WelcomeComponent } from './welcome.component';
-import { CustomerModule } from 'src/customer/customer.module';
+import { OrderModule } from './order/order.module';
+import { CustomerModule } from './customer/customer.module';
+import { DeliveryboyModule } from './deliveryboy/deliveryboy.module';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { CustomerModule } from 'src/customer/customer.module';
     BrowserModule,
     OrderModule,
     CustomerModule,
+    DeliveryboyModule,
     RouterModule.forRoot(appRoutes)
 
   ],

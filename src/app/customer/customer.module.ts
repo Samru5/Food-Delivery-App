@@ -3,16 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { CustomerRoutes } from './customer.routes';
 import { ProfileDetailsComponent } from './profile-details.component';
+import { CustomerSettingComponent } from './customer-setting.component';
+import { TrackOrderComponent } from './track-order.component';
 
 @NgModule({
 
     declarations:[
         // CustomerLoginComponent,
         ProfileDetailsComponent,
+        CustomerSettingComponent,
+        TrackOrderComponent
     ],
     exports:[
         // CustomerLoginComponent,
         ProfileDetailsComponent,
+        CustomerSettingComponent,
+        TrackOrderComponent
         // CustomerSignUpComponent
     ],
     imports:[
