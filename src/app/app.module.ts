@@ -8,7 +8,10 @@ import { WelcomeComponent } from './welcome.component';
 import { OrderModule } from './order/order.module';
 import { CustomerModule } from './customer/customer.module';
 import { DeliveryboyModule } from './deliveryboy/deliveryboy.module';
-
+import { HttpClient } from 'selenium-webdriver/http';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { WelcomeService } from './welcome.service';
 
 @NgModule({
   declarations: [
@@ -19,13 +22,15 @@ import { DeliveryboyModule } from './deliveryboy/deliveryboy.module';
   imports: [
     BrowserModule,
     OrderModule,
+    FormsModule,
+    HttpClientModule,
     CustomerModule,
     DeliveryboyModule,
     RouterModule.forRoot(appRoutes)
 
   ],
 
-  providers: [],
+  providers: [WelcomeService],
   
   bootstrap: [AppComponent]
 })
